@@ -17,4 +17,13 @@
       <CopyToOutputDirectory>PreserveNewest</CopyToOutputDirectory>
     </Content>
   </ItemGroup>
+    
+ <Target Name="CopyReferenceFiles" BeforeTargets="Build">
+    <ItemGroup>
+      <ReferenceFiles Include="%(Reference.RelativeDir)%(Reference.Filename).xml" />
+    </ItemGroup>
+    
+    <Message Text="Copying reference files to $(OutputPath)" Importance="High" />
+    <Copy SourceFiles="@(ReferenceFiles)" DestinationFolder="$(OutputPath)" Condition="Exists('%(RootDir)%(Directory)%(Filename)%(Extension)')" />
+  </Target>
 </Project>
