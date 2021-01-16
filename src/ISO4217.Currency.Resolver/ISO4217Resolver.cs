@@ -57,9 +57,9 @@ namespace ISO4217.Currency.Resolver
             LookupByNumber = _countryCurrencies.ToLookup(c => c.Number);
         }
 
-        public IEnumerable<CountryCurrency> FindByCountry(string country)
+        public CountryCurrency FindByCountry(string country)
         {
-            return LookupByCountry[country.ToUpperInvariant()];
+            return LookupByCountry[country.ToUpperInvariant()].FirstOrDefault();
         }
 
         public IEnumerable<CountryCurrency> FindByCurrency(string currency)

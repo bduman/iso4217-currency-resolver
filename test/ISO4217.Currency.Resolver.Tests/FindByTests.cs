@@ -16,7 +16,7 @@ namespace ISO4217.Currency.Resolver.Tests
             string expectedCurrencyName, short expectedNumber,
             string expectedCurrency)
         {
-            var countryCurrency = _iso4217Resolver.FindByCountry(expectedCountry).First();
+            var countryCurrency = _iso4217Resolver.FindByCountry(expectedCountry);
 
             var actualCountryName = countryCurrency.Country;
             var actualCurrencyName = countryCurrency.CurrencyName;

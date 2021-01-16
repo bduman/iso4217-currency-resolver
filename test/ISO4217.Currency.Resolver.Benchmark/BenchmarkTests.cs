@@ -12,8 +12,7 @@ namespace ISO4217.Currency.Resolver.Benchmark
         [Benchmark]
         public string ByLookupCountryTest()
         {
-            return _iso4217.FindByCountry("TURKEY")
-                .First().CurrencyName;
+            return _iso4217.FindByCountry("TURKEY").CurrencyName;
         }
 
         [Benchmark]
