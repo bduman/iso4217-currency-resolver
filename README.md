@@ -1,11 +1,13 @@
 # ISO4217.Currency.Resolver
 
+![Nuget Push](https://github.com/bduman/iso4217-currency-resolver/workflows/Nuget%20Push/badge.svg) [![Nuget](https://img.shields.io/nuget/v/ISO4217.Currency.Resolver)](https://www.nuget.org/packages/ISO4217.Currency.Resolver/)
+
 A library provides ISO 4217 standards that includes currency, code, country and more.
 
 ## Install with NuGet package
 
 ```
-TODO
+Install-Package ISO4217.Currency.Resolver
 ```
 
 ## What is ISO-4217 ?
