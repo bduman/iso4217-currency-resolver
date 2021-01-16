@@ -7,8 +7,8 @@
     <RepositoryUrl>https://github.com/bduman/iso4217-currency-resolver.git</RepositoryUrl> 
     <RepositoryType>git</RepositoryType>
     <PackageTags>iso4217;currency;code;country</PackageTags>
-    <PackageProjectUrl>https://www.currency-iso.org/</PackageProjectUrl>
-    <PackageVersion>1.0.0</PackageVersion>
+    <PackageProjectUrl>https://github.com/bduman/iso4217-currency-resolver/</PackageProjectUrl>
+    <PackageVersion>1.0.1</PackageVersion>
     <PackageDescription>ISO4217 currency resolver library</PackageDescription>
   </PropertyGroup>
     
